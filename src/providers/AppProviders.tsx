@@ -2,6 +2,7 @@
 
 import { ReactNode } from "react";
 import { StacksProvider } from "./StacksProvider";
+import { SocketProvider } from "./SocketProvider";
 
 interface AppProvidersProps {
   children: ReactNode;
@@ -10,7 +11,9 @@ interface AppProvidersProps {
 export function AppProviders({ children }: AppProvidersProps) {
   return (
     <StacksProvider>
-      {children}
+      <SocketProvider>
+        {children}
+      </SocketProvider>
     </StacksProvider>
   );
 }
