@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070B1A;
+  --foreground: #ededed;
+  --blue: #6366F1;
+  --blue-dark: #4F46E5;
+  --purple: #A78BFA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* BlockStar Blue-Purple Colors */
+  --color-lab-blue: #6366F1;
+  --color-lab-blue-dark: #4F46E5;
+  --color-lab-purple: #A78BFA;
+  --color-lab-black: #070B1A;
+  --color-lab-black-light: #0F1629;
+  --color-lab-white: #FEFFFF;
+  --color-lab-grey: #A0A0A0;
+  --color-lab-grey-dark: #6B7280;
+
+  /* Semantic colors */
+  --color-primary: #6366F1;
+  --color-secondary: #8B5CF6;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global cursor and interaction styles */
+a, button, [role="button"], .cursor-pointer {
+  cursor: pointer !important;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+a:active, button:active, [role="button"]:active, .cursor-pointer:active {
+  transform: scale(0.97);
+}
+
+button:disabled, [role="button"]:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
+
+/* Link hover effects */
+a:hover:not(:disabled) {
+  opacity: 0.9;
+}
