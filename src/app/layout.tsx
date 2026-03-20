@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     default: "BlockStar - I have knowledge of Blockchain and Stacks",
     template: "%s | BlockStar",
   },
-  description: "Real-time multiplayer quiz games on Stacks blockchain. Create games, stake STX, and compete for prizes. Built for Let Africa Build.",
+  description: "Real-time multiplayer quiz games on Stacks blockchain. Create games, stake STX, and compete for prizes.",
   keywords: ["blockstar", "stacks", "blockchain", "quiz", "bitcoin", "STX", "multiplayer", "web3", "africa", "kahoot"],
   authors: [{ name: "Lekan (Laykesydeoke)" }],
   creator: "Lekan (Laykesydeoke)",

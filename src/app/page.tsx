@@ -242,7 +242,7 @@ export default function HomePage() {
             <Network className="w-4 h-4 text-lab-blue" />
             <span className="text-lab-grey">Built on Stacks • Bitcoin Layer 2</span>
             <span className="text-lab-grey-dark">•</span>
-            <span className="text-lab-grey">Built for <a href="https://www.letafricabuild.com/" target="_blank" rel="noopener noreferrer" className="text-lab-blue font-semibold hover:text-lab-purple transition-colors duration-300 cursor-pointer">Let Africa Build</a></span>
+            <span className="text-lab-grey">Built by <span className="text-lab-blue font-semibold">Lekan</span></span>
           </div>
         </div>
       </div>
