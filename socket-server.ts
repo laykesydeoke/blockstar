@@ -205,7 +205,7 @@ io.on("connection", (socket) => {
 
     // Notify all players in the room (including host/observers) with updated real player list
     io.to(gameId).emit("player-joined", {
-      player: game.players[game.players.length - 1],
+      player: realPlayers[realPlayers.length - 1],
       totalPlayers: realPlayers.length,
       players: realPlayers, // Send only real players for real-time updates
     });
