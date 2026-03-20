@@ -73,7 +73,7 @@ export function StacksProvider({ children }: StacksProviderProps) {
       showConnect({
         appDetails: {
           name: "BlockStar",
-          icon: typeof window !== "undefined" ? window.location.origin + "/logo.png" : "/logo.png",
+          icon: typeof window !== "undefined" ? window.location.origin + "/logo.svg" : "/logo.svg",
         },
         redirectTo: '/',
         onFinish: () => {

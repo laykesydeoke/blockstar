@@ -23,15 +23,60 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const siteUrl = "https://blockchainstar.vercel.app";
+
 export const metadata: Metadata = {
-  title: "BlockStar - I have knowledge of Blockchain and Stacks",
-  description: "Master blockchain concepts through interactive quizzes and earn Bitcoin rewards. Educational platform built on Stacks. Built for Let Africa Build.",
-  keywords: ["blockstar", "stacks", "blockchain", "education", "bitcoin", "learn", "quiz", "STX", "africa"],
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "BlockStar - I have knowledge of Blockchain and Stacks",
+    template: "%s | BlockStar",
+  },
+  description: "Real-time multiplayer quiz games on Stacks blockchain. Create games, stake STX, and compete for prizes. Built for Let Africa Build.",
+  keywords: ["blockstar", "stacks", "blockchain", "quiz", "bitcoin", "STX", "multiplayer", "web3", "africa", "kahoot"],
   authors: [{ name: "Lekan (Laykesydeoke)" }],
+  creator: "Lekan (Laykesydeoke)",
+  publisher: "BlockStar",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/manifest.json",
   openGraph: {
     title: "BlockStar - I have knowledge of Blockchain and Stacks",
-    description: "Master blockchain concepts and earn Bitcoin rewards through interactive learning",
+    description: "Real-time multiplayer quiz games on Stacks blockchain. Create games, stake STX, and compete for prizes.",
+    url: siteUrl,
+    siteName: "BlockStar",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "BlockStar - Real-Time Quiz Games on Stacks Blockchain",
+      },
+    ],
+    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BlockStar - I have knowledge of Blockchain and Stacks",
+    description: "Real-time multiplayer quiz games on Stacks blockchain. Stake STX and compete for prizes.",
+    images: ["/twitter-image.png"],
+  },
+  other: {
+    "theme-color": "#6366F1",
   },
 };
 
