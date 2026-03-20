@@ -9,7 +9,7 @@ interface GameQRCodeProps {
 }
 
 export function GameQRCode({ gameId, size = 256 }: GameQRCodeProps) {
-  const joinUrl = `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/join/${gameId}`;
+  const joinUrl = typeof window !== "undefined" ? `${window.location.origin}/join/${gameId}` : `/join/${gameId}`;
 
   return (
     <Card className="inline-block">
